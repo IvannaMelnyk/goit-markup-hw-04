@@ -100,9 +100,10 @@ img {
   margin-left: 30px;
 }
 .auth-nav .link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
@@ -113,6 +114,19 @@ img {
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.auth-nav .icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav .link .icon:hover {
   color: var(--accent-color);
 }
 
@@ -231,7 +245,6 @@ img {
 .feature-list .icon {
   width: 70px;
   height: 70px;
-  background: currentColor;
 }
 /* .feature-list .item::before {
   display: block;
