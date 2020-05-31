@@ -213,21 +213,48 @@ img {
   display: flex;
   flex-wrap: nowrap;
 }
-.feature-list.photo {
+/* .feature-list.photo {
   margin-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
   padding-bottom: 24px;
   border-radius: 4px;
-}
+} */
 .feature-list .item:nth-child(4n) {
   margin-right: 0;
 }
 .feature-list .item {
   width: 270px;
-
   margin-right: 30px;
+}
+.feature-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.feature-list .item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 70px;
+}
+.feature-list .item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+  background-size: 70px;
+}
+.feature-list .item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px;
+}
+.feature-list .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 70px;
 }
 /* specialization */
 
