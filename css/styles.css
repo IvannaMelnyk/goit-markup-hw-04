@@ -325,6 +325,7 @@ img {
 
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .staff-list .item:nth-child(4n) {
   margin-right: 0;
@@ -343,9 +344,19 @@ img {
 .staff-icon li {
   display: inline-block;
 }
-.team {
-  margin-right: 22px;
-  margin-bottom: 24px;
+.team-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: #AFB1B8;
+margin-bottom: 24px;
+}
+.team-icon:hover {
+background-color: #2196f3;
+fill: var(--white-color);
 }
 .staff-list .title {
   margin: 0;
@@ -376,7 +387,7 @@ img {
 
   margin-right: 30px;
 }
-/* .customer-list .icon {
+.customer-list .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,8 +396,14 @@ img {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-} */
-
+  
+}
+.customer-list .icon:hover,
+.customer-list .icon:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
 
 
 /* footer */
@@ -583,4 +600,8 @@ background:rgba(255, 255, 255, 0.1);
 .portfolio-list .link {
   text-decoration: none;
   display: block;
+}
+.portfolio-list li:hover,
+.portfolio-list li:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
