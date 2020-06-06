@@ -124,11 +124,11 @@ img {
 }
 
 /* hero */
-.hero {
-  text-align: center;
-
+.hero { 
   padding-top: 200px;
   padding-bottom: 200px;
+  
+  text-align: center;
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
@@ -155,11 +155,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
+ 
 }
 
 /* button */
 .button {
   display: inline-block;
+  justify-content: center;
   border-radius: 4px;
   padding: 10px 32px;
   border: 0.5px solid transparent;
@@ -521,6 +523,7 @@ background:rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
+  
 
   background-color: #f5f4fa;
   color: var(--title-text-color);
@@ -536,6 +539,7 @@ background:rgba(255, 255, 255, 0.1);
 .filter-list .link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list {
